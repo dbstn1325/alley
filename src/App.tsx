@@ -5,6 +5,7 @@ import { RecoilRoot } from "recoil";
 
 import Page404 from "pages/404page";
 import { Home } from "pages/Home/Home";
+import { Detail } from "pages/Detail/Detail";
 
 function App() {
   return (
