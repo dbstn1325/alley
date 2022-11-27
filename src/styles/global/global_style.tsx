@@ -1,9 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 
 // Pretendard
-import PretendardBold from "static/fonts/Pretendard-Bold.woff";
-import PretendardMedium from "static/fonts/Pretendard-Medium.woff";
-import PretendardRegular from "static/fonts/Pretendard-Regular.woff";
+import PretendardBold from "static/fonts/PretendardBold.woff";
+import PretendardMedium from "static/fonts/PretendardMedium.woff";
+import PretendardRegular from "static/fonts/PretendardRegular.woff";
 
 export const GlobalStyle = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/

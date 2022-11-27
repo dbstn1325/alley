@@ -1,3 +1,5 @@
+import NavButton from "components/atoms/nav/nav_button";
+
 export const Home = () => {
-  return <div>Home</div>;
+  return <NavButton>Magazine</NavButton>;
 };
