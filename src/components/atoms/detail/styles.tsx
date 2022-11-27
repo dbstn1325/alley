@@ -17,7 +17,7 @@ export const StyledTitleText = styled.div`
   height: 96px;
   position: relative;
   font-family: "PretendardMedium";
-  top: 20.125rem;
+  top: 19.625rem;
   margin-left: 1.25rem;
 `;
 
@@ -43,7 +43,7 @@ export const StyledAlleyContent = styled.div`
 
 export const StyledNavDate = styled.div`
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.188rem;
   font-family: "PretendardRegular";
 `;
 
@@ -53,5 +53,5 @@ export const StyledKeywordBox = styled.span`
   background-color: #ffffff;
   border-radius: 22px;
   padding: 2px 20px;
-  font-family: "PretendardMedium";
+  font-family: "PretendardRegular";
 `;

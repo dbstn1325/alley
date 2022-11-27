@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import JinHaeImage from "static/img/jinhae.JPG";
-import { fadeIn } from "react-animations";
 
 export const BannerStyle = styled.div`
   display: flex;

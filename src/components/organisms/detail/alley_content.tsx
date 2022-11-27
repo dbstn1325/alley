@@ -8,6 +8,7 @@ export const AlleyContent = () => {
     <StyledAlleyContent>
       <ContentFont
         padding_top={25}
+        line_height={1.563}
         content="아련 함초롱하다 곰다시 다솜 감사합니다 산들림 예그리나 도서 여우비 나비잠
       별빛 소록소록 나비잠 로운 가온누리 비나리 옅구름 바나나 노트북 포도 미쁘다
       미쁘다 나비잠 그루잠 다솜 비나리 가온해 소솜 함초롱하다 감또개 아리아 사과

@@ -8,6 +8,7 @@ export const ContentTitle = () => {
         font_size={1.313}
         font_family="PretendardMedium"
         isTitle={true}
+        line_height={2.2}
       >
         옛 모습을 그대로 간직한
       </FontStyle>
