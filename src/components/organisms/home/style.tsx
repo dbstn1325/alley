@@ -2,7 +2,8 @@ import styled, { keyframes } from "styled-components";
 import JinHaeImage from "static/img/jinhae.JPG";
 import { Link } from "react-router-dom";
 
-export const BannerStyle = styled(Link)`
+
+export const BannerStyle = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
