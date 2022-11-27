@@ -1,3 +1,9 @@
+import TopImage from "components/atoms/detail/topImage";
+
 export const Detail = () => {
-  return <div>detail</div>;
+  return (
+    <div>
+      <TopImage />
+    </div>
+  );
 };
