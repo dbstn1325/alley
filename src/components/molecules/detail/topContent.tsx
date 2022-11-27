@@ -7,6 +7,7 @@ import { ContentFont } from "components/atoms/detail/contentFont";
 import TopImage from "components/atoms/detail/topImage";
 import { useParams } from "react-router-dom";
 import { alleyInfoQuery } from "recoil/states/detail-atoms";
+import { StyledBlackFilter } from "components/atoms/detail/styles";
 
 export const TopContent = () => {
   const param = useParams();
@@ -18,6 +19,7 @@ export const TopContent = () => {
   return (
     <div>
       <TopImage height={31.375} url={alley.url} />
+      <StyledBlackFilter />
       <NavBar />
       <TopImageText />
     </div>

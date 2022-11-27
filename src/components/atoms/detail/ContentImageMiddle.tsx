@@ -1,20 +1,23 @@
 import styled from "styled-components";
 
 interface ImageProps {
-  width?: number;
+  width: any;
   height?: number;
   url: string;
+  margin_left?: number;
+  padding_left?: number;
+  padding_right?: number;
 }
 
-const TopImage = styled.img<ImageProps>`
-  position: absolute;
-  width: 100%;
+const ContentImageMiddle = styled.img<ImageProps>`
+  position: relative;
+  width: 100vw;
   height: ${(props) => props.height}rem;
   background-image: url(${(props) => props.url});
   background-size: cover;
   background-repeat: no-repeat;
   place-items: center;
-  z-index: -1;
+  margin: -20px;
 `;
 
-export default TopImage;
+export default ContentImageMiddle;

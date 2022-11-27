@@ -26,7 +26,12 @@ export const AlleyContent = () => {
         line_height={1.563}
         content={alley.content}
       />
-      <Content image_width={100} image_height={32.625} font_padding={1.5} />
+      <Content
+        image_width={100}
+        image_height={32.625}
+        font_padding={1.5}
+        isMiddle={true}
+      />
       <Content image_width={100} image_height={12} font_padding={1.5} />
       <StyledBox></StyledBox>
       <ContentImage

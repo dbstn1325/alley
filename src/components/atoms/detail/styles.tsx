@@ -55,3 +55,12 @@ export const StyledKeywordBox = styled.span`
   padding: 2px 20px;
   font-family: "PretendardRegular";
 `;
+
+export const StyledBlackFilter = styled.div`
+  background-color: black;
+  width: 100%;
+  height: 31.375rem;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.32;
+`;
