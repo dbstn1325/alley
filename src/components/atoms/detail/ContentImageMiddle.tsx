@@ -17,7 +17,7 @@ const ContentImageMiddle = styled.img<ImageProps>`
   background-size: cover;
   background-repeat: no-repeat;
   place-items: center;
-  margin: -20px;
+  margin: 0 -20px;
 `;
 
 export default ContentImageMiddle;
