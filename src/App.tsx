@@ -7,6 +7,7 @@ import Page404 from "pages/404page";
 import { Home } from "pages/Home/Home";
 import { Detail } from "pages/Detail/Detail";
 import MapPage from "pages/map/map";
+import Result from "pages/result/result";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/:id" element={<Detail />} />
         <Route path="/map" element={<MapPage />} />
         <Route path="/*" element={<Page404 />} />
+        <Route path="/result" element={<Result />} />
       </Routes>
     </RecoilRoot>
   );
