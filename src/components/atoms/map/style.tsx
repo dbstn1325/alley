@@ -1,10 +1,11 @@
 import styled from "styled-components";
+import MapImage from "static/img/map.png";
 
 export const TitleStyle = styled.h1`
   font-family: "PretendardBold";
   font-size: 1.3rem;
   color: #3b3b3b;
-  margin-top: 7rem;
+  margin-top: 5rem;
   margin-bottom: 18px;
 `;
 
@@ -26,7 +27,8 @@ export const MapImageStyle = styled.div`
   width: 100%;
   height: 30rem;
   border-radius: 10px;
-  background-color: #e6e6e6;
+  background-image: url(${MapImage});
+  background-size: contain;
 `;
 
 export const MapResultButtonStyle = styled.button`
