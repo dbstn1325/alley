@@ -8,7 +8,7 @@ import FlashIcon from "static/img/flash.png";
 const customStyles = {
   content: {
     width: "70vw",
-    height: "55vh",
+
     borderRadius: "15px",
     border: "none",
     boxShadow: "0px 3px 6px rgba(0, 0, 0, 0.13)",
