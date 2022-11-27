@@ -15,11 +15,10 @@ const ContentImage = styled.img<ImageProps>`
   height: ${(props) => props.height}rem;
   background-image: url(${(props) => props.url});
   background-size: cover;
+
   background-repeat: no-repeat;
   place-items: center;
   margin-left: ${(props) => (props.margin_left ? props.margin_left : null)}rem;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 `;
 
 export default ContentImage;

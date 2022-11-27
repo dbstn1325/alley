@@ -6,13 +6,21 @@ import { Link, NavLink } from "react-router-dom";
 import { BannerStyle } from "./style";
 import Aos from "aos";
 import "aos/dist/aos.css";
-const AlleyItem = ({ area, title, subTitle, distance, id }: AlleyItemProps) => {
+
+const AlleyItem = ({
+  area,
+  title,
+  subTitle,
+  distance,
+  id,
+  imageUrl,
+}: AlleyItemProps) => {
   useEffect(() => {
     Aos.init({ duration: 500 });
   });
   return (
     <Link to={"/" + id}>
-      <BannerStyle data-aos="fade-down">
+      <BannerStyle data-aos="fade-down" url={imageUrl}>
         <Distance distance={distance} />
         <ItemInfo area={area} title={title} subTitle={subTitle} />
       </BannerStyle>
@@ -26,6 +34,7 @@ interface AlleyItemProps {
   subTitle: string;
   distance: string;
   id: string;
+  imageUrl?: any;
 }
 
 export default AlleyItem;

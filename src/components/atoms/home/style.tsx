@@ -43,6 +43,7 @@ export const TitleStyle = styled.h1`
   color: white;
   margin-bottom: 6px;
   line-height: 2.3rem;
+  width: 15rem;
 `;
 
 export const TitleContainer = styled.div`

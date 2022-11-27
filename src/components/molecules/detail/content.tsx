@@ -12,6 +12,9 @@ interface ContentProps {
   image_height: number;
   font_padding: number;
   isMiddle?: boolean;
+  content?: string;
+  subTitle?: string;
+  mainTitle?: string;
 }
 
 export const Content = ({
@@ -19,6 +22,9 @@ export const Content = ({
   image_height,
   font_padding,
   isMiddle,
+  content,
+  subTitle,
+  mainTitle,
 }: ContentProps) => {
   const param = useParams();
   let alleyId = 0;
@@ -29,30 +35,25 @@ export const Content = ({
   const alley = useRecoilValue(alleyInfoQuery(alleyId));
   return (
     <>
-      <ContentTitle />
+      <ContentTitle subTitle={subTitle} mainTitle={mainTitle} />
       {isMiddle ? (
         <ContentImageMiddle
           width={image_width}
           height={image_height}
-          url={alley.url}
+          url={alley.url2}
         />
       ) : (
         <ContentImage
           width={image_width}
           height={image_height}
-          url={alley.url}
+          url={alley.url3}
         />
       )}
 
       <ContentFont
         padding_top={font_padding}
         line_height={1.563}
-        content={alley.firstMiddleContent}
-      />
-      <ContentFont
-        padding_top={1}
-        line_height={1.563}
-        content={alley.secondMiddleContent}
+        content={content}
       />
     </>
   );

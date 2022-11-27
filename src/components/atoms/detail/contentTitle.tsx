@@ -4,7 +4,12 @@ import { alleyInfoQuery } from "recoil/states/detail-atoms";
 import { FontStyle } from "./fontStyle";
 import { StyledContentTitle } from "./styles";
 
-export const ContentTitle = () => {
+interface ContentTitleProps {
+  subTitle?: string;
+  mainTitle?: string;
+}
+
+export const ContentTitle = ({ subTitle, mainTitle }: ContentTitleProps) => {
   const param = useParams();
   let alleyId = 0;
   if (param.id) {
@@ -20,10 +25,10 @@ export const ContentTitle = () => {
         isTitle={true}
         line_height={2.2}
       >
-        {alley.subTitle}
+        {subTitle}
       </FontStyle>
       <FontStyle font_size={2} font_family="PretendardBold" isTitle={true}>
-        {alley.mainTitle}
+        {mainTitle}
       </FontStyle>
     </StyledContentTitle>
   );
