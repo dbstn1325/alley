@@ -71,7 +71,7 @@ export const MapButtonStyle = styled.button`
   border: 1px solid #e5e5e5;
   background: white;
   box-shadow: 0px 3px 6px #00000029;
-  font-size: 2rem;
+  color: #3b3b3b;
 `;
 
 export const FooterContainer = styled.footer`

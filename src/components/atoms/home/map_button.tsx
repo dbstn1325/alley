@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import Sheet from "react-modal-sheet";
-import { MdOutlineStorefront } from "react-icons/md";
+import { FaShoppingBag } from "react-icons/fa";
 
 import { MapButtonStyle } from "./style";
 
 import { useRecoilState } from "recoil";
 import { modalState } from "states/modal_state";
+import { myPageOpenState, shopOpenState } from "states/state";
 
 const MapButton = () => {
-  const [isOpen, setOpen] = useRecoilState(modalState);
-
+  const [modalIsOpen, setIsOpen] = useRecoilState(shopOpenState);
   return (
     <>
-      <MapButtonStyle onClick={() => setOpen(true)}>
-        <MdOutlineStorefront />
+      <MapButtonStyle onClick={() => setIsOpen(true)}>
+        <FaShoppingBag size={30} />
       </MapButtonStyle>
     </>
   );
