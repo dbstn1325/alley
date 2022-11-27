@@ -9,7 +9,9 @@ import { Container } from "./style";
 
 const HomeTemplate = () => {
   return (
-    <Container>
+
+    <Container onWheel={(e) => console.log("휠")}>
+
       <NavBar></NavBar>
       <Address></Address>
 
@@ -37,7 +39,6 @@ const HomeTemplate = () => {
         distance="321m"
       />
 
-      <MapButton />
       <FooterContainer />
     </Container>
   );
