@@ -10,7 +10,9 @@ import styled from "styled-components";
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import MapButton from "components/atoms/home/map_button";
-import Modal from "components/atoms/home/Modal";
+
+import MyPageModal from "components/atoms/home/mypage_modal";
+import ShopModal from "components/atoms/home/shop_modal";
 const HomeTemplate = () => {
   const [isOpenModal, setOpenModal] = useState<boolean>(false);
 
@@ -47,46 +49,13 @@ const HomeTemplate = () => {
         id="2"
       />
 
-      <Main>
-        <Title>여긴 배경화면 입니다</Title>
-        {isOpenModal && (
-          <Modal onClickToggleModal={onClickToggleModal}>
-            이곳에 children이 들어갑니다.
-          </Modal>
-        )}
-        <DialogButton onClick={onClickToggleModal}>Open Modal</DialogButton>
-      </Main>
-
+      <MyPageModal />
+      <ShopModal />
       <MapButton />
 
       <FooterContainer />
     </Container>
   );
 };
-const DialogButton = styled.button`
-  width: 160px;
-  height: 48px;
-  background-color: blueviolet;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 400;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
 
-  &:hover {
-    transform: translateY(-1px);
-  }
-`;
-const Main = styled.main`
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const Title = styled.h3`
-  text-align: center;
-`;
 export default HomeTemplate;
