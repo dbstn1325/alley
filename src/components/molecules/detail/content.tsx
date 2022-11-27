@@ -34,13 +34,13 @@ export const Content = ({
         <ContentImageMiddle
           width={image_width}
           height={image_height}
-          url={alley.url}
+          url={alley.url2}
         />
       ) : (
         <ContentImage
           width={image_width}
           height={image_height}
-          url={alley.url}
+          url={alley.url3}
         />
       )}
 

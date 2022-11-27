@@ -34,12 +34,6 @@ export const AlleyContent = () => {
       />
       <Content image_width={100} image_height={12} font_padding={1.5} />
       <StyledBox></StyledBox>
-      <ContentImage
-        width={60}
-        height={24.25}
-        url={alley.url}
-        margin_left={8.688}
-      />
     </StyledAlleyContent>
   );
 };
