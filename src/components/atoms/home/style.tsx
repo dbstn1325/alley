@@ -41,9 +41,11 @@ export const TitleStyle = styled.h1`
   font-size: 2rem;
   color: white;
   margin-bottom: 6px;
+  line-height: 2.3rem;
 `;
 
 export const TitleContainer = styled.div`
+  width: 90%;
   display: flex;
   flex-direction: column;
 `;

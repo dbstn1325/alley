@@ -9,32 +9,27 @@ import { Container } from "./style";
 
 const HomeTemplate = () => {
   return (
-
     <Container onWheel={(e) => console.log("휠")}>
-
       <NavBar></NavBar>
       <Address></Address>
 
       <AlleyItem
         area="진해"
-        title1="진해에서 만나는"
-        title2="작은 겨울왕국"
+        title="진해에서 만나는 작은 겨울왕국"
         subTitle="따끈한 어묵도 먹을 수 있는 플레이스"
         distance="321m"
       />
 
       <AlleyItem
         area="진해"
-        title1="ㅁㅇㄹ"
-        title2="작은 겨ㅁㅇㄹㅇㅁㄹㅁㅇ울왕국"
+        title="진해에서 만나는 작은 겨울왕국"
         subTitle="살려줘"
         distance="321m"
       />
 
       <AlleyItem
         area="진해"
-        title1="ㅁㅇㄹ"
-        title2="작은 겨ㅁㅇㄹㅇㅁㄹㅁㅇ울왕국"
+        title="진해에서 만나는 작은 겨울왕국"
         subTitle="살려줘"
         distance="321m"
       />
