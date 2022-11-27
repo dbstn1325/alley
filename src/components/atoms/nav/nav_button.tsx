@@ -1,11 +1,15 @@
-import React from "react";
 import NavButtonStyle from "./style";
 
-const NavButton = ({ text }: NavButtonProps) => {
-  return <NavButtonStyle color="3B3B3B">{text}</NavButtonStyle>;
+const NavButton = ({ text, isSelected }: NavButtonProps) => {
+  return (
+    <NavButtonStyle isMagazine={isSelected ? true : false}>
+      {text}
+    </NavButtonStyle>
+  );
 };
 
 interface NavButtonProps {
   text: string;
+  isSelected: boolean;
 }
 export default NavButton;
