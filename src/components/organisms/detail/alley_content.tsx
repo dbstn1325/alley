@@ -9,8 +9,7 @@ import {
   currentAlleyInfoQuery,
 } from "recoil/states/detail-atoms";
 
-import jinhae from "static/img/jinhae.JPG";
-import park from "static/img/park.JPG";
+
 export const AlleyContent = () => {
   const param = useParams();
   let alleyId = 0;

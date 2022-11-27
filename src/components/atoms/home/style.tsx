@@ -20,6 +20,7 @@ export const AddressStyle = styled.span`
   justify-content: flex-end;
   align-items: center;
   margin-bottom: 15px;
+  margin-top: 5rem;
 `;
 
 export const AreaStyle = styled.div`
@@ -75,4 +76,19 @@ export const MapButtonStyle = styled.button`
 
 export const FooterContainer = styled.footer`
   height: 0.7rem;
+`;
+
+export const MyPageButtonStyle = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 1.9rem;
+  margin-top: 8px;
+  font-family: "PretendardMedium";
+  color: #3b3b3b;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
 `;

@@ -46,6 +46,7 @@ const HomeTemplate = () => {
         distance="321m"
         id="2"
       />
+
       <Main>
         <Title>여긴 배경화면 입니다</Title>
         {isOpenModal && (
@@ -55,6 +56,9 @@ const HomeTemplate = () => {
         )}
         <DialogButton onClick={onClickToggleModal}>Open Modal</DialogButton>
       </Main>
+
+      <MapButton />
+
       <FooterContainer />
     </Container>
   );
