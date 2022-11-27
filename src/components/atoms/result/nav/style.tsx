@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ResultNavStyle = styled.nav`
   box-sizing: border-box;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   padding: 0 13px 0 10px;
   position: fixed;
   top: 0;

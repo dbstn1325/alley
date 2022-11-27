@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NavContainer = styled.nav`
   box-sizing: border-box;
   width: 100%;
-  height: 6rem;
+  height: 4.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
