@@ -1,15 +1,13 @@
-import { BackArrow } from "components/atoms/detail/backArrow";
-import { ContentFont } from "components/atoms/detail/contentFont";
-import TopImage from "components/atoms/detail/topImage";
-import { TopImageText } from "components/atoms/detail/topImageText";
-import { NavBar } from "components/molecules/detail/navBar";
+import { StyledBox } from "components/atoms/detail/styles";
 import { TopContent } from "components/molecules/detail/topContent";
+import { AlleyContent } from "components/organisms/detail/alley_content";
 
 export const Detail = () => {
   return (
     <div>
       <TopContent />
-      <ContentFont />
+      <AlleyContent />
+      <StyledBox />
     </div>
   );
 };
