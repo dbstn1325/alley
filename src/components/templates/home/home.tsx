@@ -18,6 +18,7 @@ const HomeTemplate = () => {
         title="진해에서 만나는 작은 겨울왕국"
         subTitle="따끈한 어묵도 먹을 수 있는 플레이스"
         distance="321m"
+        id="0"
       />
 
       <AlleyItem
@@ -25,6 +26,7 @@ const HomeTemplate = () => {
         title="진해에서 만나는 작은 겨울왕국"
         subTitle="살려줘"
         distance="321m"
+        id="1"
       />
 
       <AlleyItem
@@ -32,6 +34,7 @@ const HomeTemplate = () => {
         title="진해에서 만나는 작은 겨울왕국"
         subTitle="살려줘"
         distance="321m"
+        id="2"
       />
 
       <FooterContainer />
