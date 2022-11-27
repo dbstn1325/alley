@@ -1,11 +1,12 @@
 import { BackArrow } from "components/atoms/detail/backArrow";
-import { StyledDetail } from "components/atoms/detail/styles";
+import { NavDate } from "components/atoms/detail/navDate";
+import { StyledNavBar } from "components/atoms/detail/styles";
 
 export const NavBar = () => {
   return (
-    <StyledDetail>
+    <StyledNavBar>
       <BackArrow />
-      2022.11.23
-    </StyledDetail>
+      <NavDate />
+    </StyledNavBar>
   );
 };
