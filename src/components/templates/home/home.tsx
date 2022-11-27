@@ -37,7 +37,7 @@ const HomeTemplate = () => {
         distance="321m"
         id="2"
       />
-
+      <MapButton />
       <FooterContainer />
     </Container>
   );

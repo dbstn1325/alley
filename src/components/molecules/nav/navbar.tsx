@@ -2,23 +2,27 @@ import NavButton from "components/atoms/nav/nav_button";
 import { useLocation } from "react-router-dom";
 import { NavContainer } from "./style";
 import { Link } from "react-router-dom";
+import MyPageButton from "components/atoms/home/mypage_btn";
 const NavBar = () => {
   const location = useLocation();
   console.log(location.pathname === "/shop");
   return (
     <NavContainer>
-      <Link to="/">
-        <NavButton
-          isSelected={location.pathname === "/" ? true : false}
-          text="Magazine"
-        ></NavButton>
-      </Link>
-      <Link to="/map">
-        <NavButton
-          isSelected={location.pathname === "/map" ? true : false}
-          text="Map"
-        ></NavButton>
-      </Link>
+      <div>
+        <Link to="/">
+          <NavButton
+            isSelected={location.pathname === "/" ? true : false}
+            text="Magazine"
+          ></NavButton>
+        </Link>
+        <Link to="/map">
+          <NavButton
+            isSelected={location.pathname === "/map" ? true : false}
+            text="Map"
+          ></NavButton>
+        </Link>
+      </div>
+      <MyPageButton />
     </NavContainer>
   );
 };
