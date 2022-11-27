@@ -1,7 +1,17 @@
+import { useParams } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { alleyInfoQuery } from "recoil/states/detail-atoms";
 import { FontStyle } from "./fontStyle";
 import { StyledContentTitle } from "./styles";
 
 export const ContentTitle = () => {
+  const param = useParams();
+  let alleyId = 0;
+  if (param.id) {
+    alleyId = parseInt(param.id);
+  }
+
+  const alley = useRecoilValue(alleyInfoQuery(alleyId));
   return (
     <StyledContentTitle>
       <FontStyle
@@ -10,10 +20,10 @@ export const ContentTitle = () => {
         isTitle={true}
         line_height={2.2}
       >
-        옛 모습을 그대로 간직한
+        {alley.subTitle}
       </FontStyle>
       <FontStyle font_size={2} font_family="PretendardBold" isTitle={true}>
-        소사마을&김씨박물관
+        {alley.mainTitle}
       </FontStyle>
     </StyledContentTitle>
   );

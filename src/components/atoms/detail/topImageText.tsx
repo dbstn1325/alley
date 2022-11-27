@@ -1,10 +1,20 @@
+import { useParams } from "react-router-dom";
+import { useRecoilValue } from "recoil";
+import { alleyInfoQuery } from "recoil/states/detail-atoms";
 import { FontStyle } from "./fontStyle";
 import { StyledKeywordBox, StyledTitleText } from "./styles";
 
 export const TopImageText = () => {
+  const param = useParams();
+  let alleyId = 0;
+  if (param.id) {
+    alleyId = parseInt(param.id);
+  }
+
+  const alley = useRecoilValue(alleyInfoQuery(alleyId));
   return (
     <StyledTitleText>
-      <StyledKeywordBox>진해</StyledKeywordBox>
+      <StyledKeywordBox>{alley.area}</StyledKeywordBox>
       <FontStyle
         font_size={2.5}
         color={"#FFFFFF"}
@@ -12,7 +22,7 @@ export const TopImageText = () => {
         font_family={"PretendardBold"}
         line_height={3}
       >
-        진해에서 만나는 작은 겨울왕국
+        {alley.title}
       </FontStyle>
     </StyledTitleText>
   );
