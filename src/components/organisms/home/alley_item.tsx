@@ -1,8 +1,9 @@
 import Distance from "components/molecules/home/distance";
 import ItemInfo from "components/molecules/home/item_info";
-import React from "react";
+import React, { useEffect } from "react";
 import { BannerStyle } from "./style";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 const AlleyItem = ({
   area,
   title1,
@@ -10,8 +11,11 @@ const AlleyItem = ({
   subTitle,
   distance,
 }: AlleyItemProps) => {
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+  });
   return (
-    <BannerStyle>
+    <BannerStyle data-aos="fade-down">
       <Distance distance={distance} />
       <ItemInfo
         area={area}

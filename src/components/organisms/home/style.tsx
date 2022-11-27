@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 import JinHaeImage from "static/img/jinhae.JPG";
-import { fadeIn } from "react-animations";
 
 export const BannerStyle = styled.div`
   display: flex;
@@ -9,7 +8,7 @@ export const BannerStyle = styled.div`
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   padding: 1rem 1rem 2rem 1rem;
   background-image: url(${JinHaeImage});
   background-size: cover;
