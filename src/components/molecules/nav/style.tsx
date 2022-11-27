@@ -7,5 +7,5 @@ export const NavContainer = styled.nav`
   padding: 0 0 20px 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-end;
 `;

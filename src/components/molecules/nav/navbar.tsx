@@ -12,8 +12,8 @@ const NavBar = () => {
         text="Magazine"
       ></NavButton>
       <NavButton
-        isSelected={location.pathname === "/shop" ? true : false}
-        text="Shop"
+        isSelected={location.pathname === "/map" ? true : false}
+        text="Map"
       ></NavButton>
     </NavContainer>
   );

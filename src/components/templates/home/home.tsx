@@ -7,9 +7,10 @@ import AlleyItem from "components/organisms/home/alley_item";
 
 import { Container } from "./style";
 
+import { useEffect, useRef } from "react";
 const HomeTemplate = () => {
   return (
-    <Container onWheel={(e) => console.log("휠")}>
+    <Container>
       <NavBar></NavBar>
       <Address></Address>
 
