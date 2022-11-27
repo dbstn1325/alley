@@ -1,5 +1,6 @@
 import { ContentFont } from "components/atoms/detail/contentFont";
 import ContentImage from "components/atoms/detail/ContentImage";
+import ContentImageMiddle from "components/atoms/detail/ContentImageMiddle";
 import { ContentTitle } from "components/atoms/detail/contentTitle";
 import { useParams } from "react-router-dom";
 import { useRecoilValue } from "recoil";
@@ -10,12 +11,14 @@ interface ContentProps {
   image_width: number;
   image_height: number;
   font_padding: number;
+  isMiddle?: boolean;
 }
 
 export const Content = ({
   image_width,
   image_height,
   font_padding,
+  isMiddle,
 }: ContentProps) => {
   const param = useParams();
   let alleyId = 0;
@@ -27,7 +30,20 @@ export const Content = ({
   return (
     <>
       <ContentTitle />
-      <ContentImage width={image_width} height={image_height} url={alley.url} />
+      {isMiddle ? (
+        <ContentImageMiddle
+          width={image_width}
+          height={image_height}
+          url={alley.url}
+        />
+      ) : (
+        <ContentImage
+          width={image_width}
+          height={image_height}
+          url={alley.url}
+        />
+      )}
+
       <ContentFont
         padding_top={font_padding}
         line_height={1.563}
