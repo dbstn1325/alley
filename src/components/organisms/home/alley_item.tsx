@@ -10,18 +10,10 @@ const AlleyItem = ({ area, title, subTitle, distance }: AlleyItemProps) => {
     Aos.init({ duration: 500 });
   });
   return (
-    <ReactScrollWheelHandler
-      upHandler={(e) => console.log("scroll up")}
-      downHandler={(e) => {
-        window.scrollTo(0, 120);
-        console.log("scroll down");
-      }}
-    >
-      <BannerStyle data-aos="fade-down">
-        <Distance distance={distance} />
-        <ItemInfo area={area} title={title} subTitle={subTitle} />
-      </BannerStyle>
-    </ReactScrollWheelHandler>
+    <BannerStyle data-aos="fade-down">
+      <Distance distance={distance} />
+      <ItemInfo area={area} title={title} subTitle={subTitle} />
+    </BannerStyle>
   );
 };
 
