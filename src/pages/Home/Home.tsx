@@ -1,23 +1,21 @@
+import Address from "components/atoms/home/address";
 import Area from "components/atoms/home/Area";
-import Distance from "components/atoms/home/distance";
+import { AddressStyle } from "components/atoms/home/style";
+
 import SubTitle from "components/atoms/home/sub_title";
 import Title from "components/atoms/home/title";
 import NavButton from "components/atoms/nav/nav_button";
+import Distance from "components/molecules/home/distance";
 import ItemInfo from "components/molecules/home/item_info";
+import NavBar from "components/molecules/nav/navbar";
 import AlleyItem from "components/organisms/home/alley_item";
+import HomeTemplate from "components/templates/home/home";
 
 export const Home = () => {
   return (
     <>
-      <NavButton text="Magazine"></NavButton>
-      <NavButton text="Shop"></NavButton>
-      <Distance distance="364m"></Distance>
-      <AlleyItem
-        area="진해"
-        title1="진해에서 만나는"
-        title2="작은 겨울왕국"
-        subTitle="따끈한 어묵도 먹을 수 있는 플레이스"
-      />
+      <HomeTemplate />
+      
     </>
   );
 };

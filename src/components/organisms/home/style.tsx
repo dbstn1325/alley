@@ -1,7 +1,31 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import JinHaeImage from "static/img/jinhae.JPG";
+import { fadeIn } from "react-animations";
 
 export const BannerStyle = styled.div`
-  width: 90%;
-  height: 500px;
-  background-color: black;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80vh;
+  padding: 1rem 1rem 2rem 1rem;
+  background-image: url(${JinHaeImage});
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 0px 3px 6px #00000029;
+  margin-bottom: 2rem;
+
+  &::before {
+    content: "";
+    opacity: 0.32;
+    position: absolute;
+    border-radius: 15px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000;
+  }
 `;
