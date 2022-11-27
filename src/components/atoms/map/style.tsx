@@ -4,11 +4,12 @@ export const TitleStyle = styled.h1`
   font-family: "PretendardBold";
   font-size: 1.3rem;
   color: #3b3b3b;
-  margin-top: 3rem;
+  margin-top: 7rem;
   margin-bottom: 18px;
 `;
 
 export const MapButtonStyle = styled.button<MapButtonProps>`
+  height: 2.4rem;
   border: 1px solid #3b3b3b;
   background-color: ${(props) => (props.isSelected ? "#3B3B3B" : "white")};
   color: ${(props) => (props.isSelected ? "white" : "#3B3B3B")};
@@ -26,6 +27,26 @@ export const MapImageStyle = styled.div`
   height: 30rem;
   border-radius: 10px;
   background-color: #e6e6e6;
+`;
+
+export const MapResultButtonStyle = styled.button`
+  position: fixed;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  bottom: 2rem;
+  width: 16rem;
+  height: 4rem;
+  background-color: #3b3b3b;
+  color: white;
+  font-family: "PretendardRegular";
+  font-size: 1.1rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 interface MapButtonProps {

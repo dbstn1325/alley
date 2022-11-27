@@ -2,7 +2,6 @@ import styled, { keyframes } from "styled-components";
 import JinHaeImage from "static/img/jinhae.JPG";
 import { Link } from "react-router-dom";
 
-
 export const BannerStyle = styled.div`
   display: flex;
   position: relative;
@@ -10,7 +9,7 @@ export const BannerStyle = styled.div`
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
   padding: 1rem 1rem 2rem 1rem;
   background-image: url(${JinHaeImage});
   background-size: cover;
