@@ -9,7 +9,9 @@ import { Container } from "./style";
 
 const HomeTemplate = () => {
   return (
+
     <Container onWheel={(e) => console.log("휠")}>
+
       <NavBar></NavBar>
       <Address></Address>
 
