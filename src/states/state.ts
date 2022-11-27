@@ -2,7 +2,7 @@ import { atom } from "recoil";
 
 export const mapTitleState = atom({
   key: "mapTitleState",
-  default: "",
+  default: "진해구",
 });
 
 export const myPageOpenState = atom({
