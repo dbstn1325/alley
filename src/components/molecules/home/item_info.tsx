@@ -4,11 +4,11 @@ import Title from "components/atoms/home/title";
 import React from "react";
 import { ItemInfoContainer } from "./style";
 
-const ItemInfo = ({ area, title1, title2, subTitle }: ItemInfoProps) => {
+const ItemInfo = ({ area, title, subTitle }: ItemInfoProps) => {
   return (
     <ItemInfoContainer>
       <Area area={area}></Area>
-      <Title title1={title1} title2={title2} />
+      <Title title={title} />
       <SubTitle title1={subTitle}></SubTitle>
     </ItemInfoContainer>
   );
@@ -16,8 +16,7 @@ const ItemInfo = ({ area, title1, title2, subTitle }: ItemInfoProps) => {
 
 interface ItemInfoProps {
   area: string;
-  title1: string;
-  title2: string;
+  title: string;
   subTitle: string;
 }
 
