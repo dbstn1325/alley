@@ -1,4 +1,5 @@
 import Footer from "components/atoms/home/footer";
+import MapImage from "components/atoms/map/map_image";
 import MapTitle from "components/atoms/map/map_title";
 import NavBar from "components/molecules/nav/navbar";
 import MapButtons from "components/organisms/map/map";
@@ -11,6 +12,7 @@ const MapTemplate = () => {
       <NavBar></NavBar>
       <MapTitle />
       <MapButtons />
+      <MapImage />
       <Footer />
     </Container>
   );
