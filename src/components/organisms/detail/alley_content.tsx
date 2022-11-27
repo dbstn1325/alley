@@ -9,7 +9,6 @@ import {
   currentAlleyInfoQuery,
 } from "recoil/states/detail-atoms";
 
-
 export const AlleyContent = () => {
   const param = useParams();
   let alleyId = 0;
@@ -30,8 +29,18 @@ export const AlleyContent = () => {
         image_height={32.625}
         font_padding={1.5}
         isMiddle={true}
+        content={alley.firstMiddleContent}
+        subTitle={alley.subTitle}
+        mainTitle={alley.mainTitle}
       />
-      <Content image_width={100} image_height={12} font_padding={1.5} />
+      <Content
+        image_width={100}
+        image_height={14}
+        font_padding={1.5}
+        content={alley.secondMiddleContent}
+        subTitle={alley.subTitle2}
+        mainTitle={alley.mainTitle2}
+      />
       <StyledBox></StyledBox>
     </StyledAlleyContent>
   );

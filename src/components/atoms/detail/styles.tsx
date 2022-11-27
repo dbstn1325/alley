@@ -13,7 +13,7 @@ export const StyledNavBar = styled.nav`
 `;
 
 export const StyledTitleText = styled.div`
-  width: 255px;
+  width: 300px;
   height: 96px;
   position: relative;
   font-family: "PretendardMedium";
