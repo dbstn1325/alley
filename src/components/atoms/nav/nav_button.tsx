@@ -1,12 +1,11 @@
 import React from "react";
-import styled from "styled-components";
+import NavButtonStyle from "./style";
 
-const NavButton = styled.button`
-  font-family: "PretendardBold";
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-`;
+const NavButton = ({ text }: NavButtonProps) => {
+  return <NavButtonStyle color="3B3B3B">{text}</NavButtonStyle>;
+};
 
+interface NavButtonProps {
+  text: string;
+}
 export default NavButton;
