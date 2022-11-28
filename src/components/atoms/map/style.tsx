@@ -34,7 +34,8 @@ export const MapImageStyle = styled.div<MapImageStyleProps>`
   height: 30rem;
   border-radius: 10px;
   background-image: url(${(props) => props.mapImageUrl});
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 `;
 
 export const MapResultButtonStyle = styled.button`
