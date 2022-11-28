@@ -58,6 +58,27 @@ export const MapResultButtonStyle = styled.button`
   align-items: center;
 `;
 
+export const MapNoResultButtonStyle = styled.button`
+  position: fixed;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  bottom: 2rem;
+  width: 16rem;
+  height: 4rem;
+  background-color: #d3d3d3;
+  border: none;
+  color: #808080;
+  font-family: "PretendardRegular";
+  font-size: 1.1rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 interface MapButtonProps {
   isSelected: boolean;
 }

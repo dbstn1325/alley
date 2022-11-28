@@ -41,7 +41,7 @@ const HomeTemplate = () => {
         area="진해"
         title="시와 시간이 만나는 공간"
         subTitle="나는 조그마한 샘물을 들여다보며 조그마한 지..."
-        distance="12.1 km"
+        distance="6.6 km"
         id="0"
         imageUrl={main1_1}
       />
@@ -50,7 +50,7 @@ const HomeTemplate = () => {
         area="진해"
         title="추억이 묻은 그곳, 김씨공작소"
         subTitle="앱으로 부른 택시 기사님이 말하길 스시마을 인..."
-        distance="21.5 km"
+        distance="6.7 km"
         id="1"
         imageUrl={main2_1}
       />
