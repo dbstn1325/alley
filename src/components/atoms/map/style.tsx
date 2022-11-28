@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import MapImage from "static/img/map.png";
+import { useRecoilState } from "recoil";
+import { imageUrlState } from "states/state";
 
 export const TitleStyle = styled.h1`
   font-family: "PretendardBold";
@@ -23,11 +25,15 @@ export const MapButtonStyle = styled.button<MapButtonProps>`
   cursor: pointer;
 `;
 
-export const MapImageStyle = styled.div`
+interface MapImageStyleProps {
+  mapImageUrl: string;
+}
+
+export const MapImageStyle = styled.div<MapImageStyleProps>`
   width: 100%;
   height: 30rem;
   border-radius: 10px;
-  background-image: url(${MapImage});
+  background-image: url(${(props) => props.mapImageUrl});
   background-size: contain;
 `;
 
