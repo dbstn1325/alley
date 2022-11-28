@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import { NavContainer } from "./style";
 import { Link } from "react-router-dom";
 import MyPageButton from "components/atoms/home/mypage_btn";
+import MyPageModal from "components/atoms/home/mypage_modal";
+import ShopModal from "components/atoms/home/shop_modal";
 const NavBar = () => {
   const location = useLocation();
   console.log(location.pathname === "/shop");
@@ -23,6 +25,9 @@ const NavBar = () => {
         </Link>
       </div>
       <MyPageButton />
+
+      <MyPageModal />
+      <ShopModal />
     </NavContainer>
   );
 };

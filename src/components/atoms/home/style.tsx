@@ -65,7 +65,7 @@ export const MapButtonStyle = styled.button`
   position: fixed;
   bottom: 0;
   right: 0;
-  margin: 0 1.2rem 65px 0;
+  margin: 0 1.2rem 25px 0;
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
