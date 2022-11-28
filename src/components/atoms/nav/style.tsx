@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-const NavButtonStyle = styled.button<ColorProps>`
+const NavButtonStyle = styled.span<ColorProps>`
   font-family: "PretendardBold";
   font-size: 1.5rem;
+  margin-right: 10px;
   background: none;
   border: none;
   cursor: pointer;

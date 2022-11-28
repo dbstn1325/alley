@@ -38,21 +38,6 @@ const ResultTemplate = () => {
         id="2"
         imageUrl={main3_1}
       />
-      <AlleyItem
-        area="진해"
-        title="진해에서 만나는 작은 겨울왕국"
-        subTitle="살려줘"
-        distance="321m"
-        id="1"
-      />
-
-      <AlleyItem
-        area="진해"
-        title="진해에서 만나는 작은 겨울왕국"
-        subTitle="살려줘"
-        distance="321m"
-        id="2"
-      />
     </ResultContainer>
   );
 };

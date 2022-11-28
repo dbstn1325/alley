@@ -5,7 +5,7 @@ const Address = () => {
   return (
     <AddressStyle>
       <IoLocationSharp />
-      경상남도 창원시
+      경상남도 창원시...
     </AddressStyle>
   );
 };

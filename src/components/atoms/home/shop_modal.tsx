@@ -42,7 +42,7 @@ const ShopModal = () => {
         contentLabel="shop Modal"
       >
         <CloseContainer>
-          <IoClose size={40} onClick={closeModal} />
+          <IoClose size={30} onClick={closeModal} />
         </CloseContainer>
 
         <TitleContainer>
@@ -71,12 +71,12 @@ const CloseContainer = styled.div`
 const SubTitle = styled.span`
   font-family: "PretendardMedium";
   margin-bottom: 12px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 `;
 
 const MainTitle = styled.span`
   font-family: "PretendardMedium";
-  font-size: 1.9rem;
+  font-size: 1.2rem;
 `;
 
 const TitleContainer = styled.div`
@@ -89,18 +89,18 @@ const TitleContainer = styled.div`
 
 const SeeTitle = styled.span`
   font-family: "PretendardMedium";
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   margin-bottom: 15px;
 `;
 
 const DateTitle = styled.span`
   font-family: "PretendardMedium";
-  font-size: 1.3rem;
+  font-size: 0.8rem;
 `;
 
 const FlashImage = styled.img.attrs({ src: `${ShopIcon}` })`
-  width: 15rem;
-  height: 15rem;
+  width: 5rem;
+  height: 5rem;
 `;
 
 const ImageContainer = styled.div`
