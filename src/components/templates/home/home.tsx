@@ -64,8 +64,7 @@ const HomeTemplate = () => {
         imageUrl={main3_1}
       />
 
-      <MyPageModal />
-      <ShopModal />
+
       <MapButton />
 
       <FooterContainer />
